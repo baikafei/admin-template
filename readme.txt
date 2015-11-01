@@ -7,9 +7,12 @@ Version: 1.0.0
 |_css
 |_less
 |_js
-	|_app				AngularJS Files
-	|_modules			JS Files: JQuery, bootstrap, etc
+	|_app					AngularJS Files
+	|_modules				JS Files: JQuery, bootstrap, etc
 		|_adminlte
+		|_angularjs
+		|_ui-router
+		|_app.js			Main js file to include in index.html
 	|_plugins
 |_img
 |_fonts
