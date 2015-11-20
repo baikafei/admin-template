@@ -1,14 +1,90 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
-	<h1>
-		Simple Interest
-		<small>Sub header</small>
-	</h1>
+    <h1>
+        Interest
+        <small>Calculation</small>
+    </h1>
 </section>
 
 <!-- Main content -->
 <section class="content">
-testing
-simple instest
+    <h2 class="page-header">Simple Interest</h2>
+    <div class="row">
 
+        <div class="col-md-8">
+            <div class="box box-solid box-primary">
+                <div class="box-header">
+                    <h3 class="box-title">Input parameters</h3>
+                </div>
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="presentValue">Present value</label>
+                        <input id="presentValue" type="number" class="form-control" placeholder="Present value">
+                    </div>
+                    <div class="form-group">
+                        <label for="futureValue">Future value</label>
+                        <input id="futureValue" type="number" class="form-control" placeholder="Future value">
+                    </div>
+                    <div class="form-group">
+                        <label for="interestRate">Interest rate</label>
+                        <div class="input-group">
+                            <input id="interestRate" type="number" class="form-control" placeholder="Interest rate">
+                            <span class="input-group-addon">%</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="numberOfPeriods">Number of periods</label>
+                        <input id="numberOfPeriods" type="number" class="form-control" placeholder="Number of periods">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="r3" class="flat-blue" checked/>
+                            Present value
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="r3" class="flat-blue"/>
+                            Future value
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="r3" class="flat-blue" />
+                            Interest rate
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="r3" class="flat-blue" />
+                            Number of period
+                        </label>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <input type="button" value="Calculate" class="btn btn-flat btn-primary"/>
+                    <input type="button" value="Reset" class="btn btn-flat btn-default"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="box box-solid">
+                <div class="box-header">
+                    <h3 class="box-title">Information</h3>
+                </div>
+                <div class="box-body">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
+
+<script type="text/javascript">
+    $(function() {
+        //iCheck
+        $('input[type="checkbox"].flat-blue, input[type="radio"].flat-blue').iCheck({
+            checkboxClass: 'icheckbox_flat-blue',
+            radioClass: 'iradio_flat-blue'
+        });
+    });
+</script>
